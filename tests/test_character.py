@@ -13,7 +13,7 @@ class TestCharacterInitWithoutName(TestCase):
         testobj = Character(ARBITRARY_NAME)
         self.assertNotEqual(ARBITRARY_NAME, testobj.name)
 
-class TestChracterEnterMap(TestCase):
+class TestCharacterEnterMap(TestCase):
     def test_init(self):
         ARBITRARY_NAME = ""
         testobj = enter_map(gamemap())
