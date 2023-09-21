@@ -7,7 +7,7 @@ class TestCharacterInitWithName(TestCase):
         testobj = Character(ARBITRARY_NAME)
         self.assertEqual(ARBITRARY_NAME, testobj.name)
 
-class TestCharacterNoName(TestCase):
+class TestCharacterInitNoName(TestCase):
     def test_init(self):
         ARBITRARY_NAME = " "
         testobj = Character(ARBITRARY_NAME)
