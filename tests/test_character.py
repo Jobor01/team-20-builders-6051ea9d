@@ -9,7 +9,7 @@ class TestCharacterInitWithName(TestCase):
 
 class TestCharacterInitWithoutName(TestCase):
     def test_init(self):
-        ARBITRARY_NAME = " "
+        ARBITRARY_NAME = ""
         testobj = Character(ARBITRARY_NAME)
         self.assertNotEqual(ARBITRARY_NAME, testobj.name)
 
