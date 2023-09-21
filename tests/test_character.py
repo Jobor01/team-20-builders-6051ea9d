@@ -23,7 +23,7 @@ class TestCharacterGetPosition(TestCase):
     def test_init(self):
         ARBITRARY_NAME = ""
         testobj = Character(ARBITRARY_NAME)
-        self.assertNotEqual(Name, testobj.position)
+        self.assertNotEqual(None, testobj.position)
 
 class TestCharacterMove(TestCase):
     def test_init(self):
