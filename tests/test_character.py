@@ -16,7 +16,7 @@ class TestCharacterInitWithoutName(TestCase):
 class TestCharacterEnterMap(TestCase):
     def test_init(self):
         ARBITRARY_NAME = ""
-        testobj = enter_map(gamemap())
+        testobj.enter_map(gamemap())
         self.assertNotEqual(None, testobj.map)
 
 class TestCharacterGetPosition(TestCase):
