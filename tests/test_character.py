@@ -9,5 +9,5 @@ class TestCharacterInitWithName(TestCase):
 
     def test_init(self):
         ARBITRARY_NAME = "Tim"
-        testobj = Character(ArithmeticName)
+        testobj = Character(ARBITRARY_NAME)
         self.assertEqual(ARBITRARY_NAME, testobj.name)
