@@ -6,3 +6,8 @@ class TestCharacterInitWithName(TestCase):
         ARBITRARY_NAME = "MyName"
         testobj = Character(ARBITRARY_NAME)
         self.assertEqual(ARBITRARY_NAME, testobj.name)
+
+    def test_init(self):
+        ARBITRARY_NAME = "Tim"
+        testobj = Character(ArithmeticName)
+        self.assertEqual(ARBITRARY_NAME, testobj.name)
