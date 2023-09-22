@@ -15,7 +15,7 @@ class gamemap:
 
     def calculate_position(self, startpos, movement):
         if movement == 'n':
-            return self.position[startpos.y + 1 if startpost.y < (self.grid_size - 1) else startpos.y][startpos.x]
+            return self.position[startpos.y + 1 if startpos.y < (self.grid_size - 1) else startpos.y][startpos.x]
         elif movement == 's':
             return self.position[startpos.y - 1 if startpos.y > 0 else startpos.y][startpos.x]
         elif movement == 'e':

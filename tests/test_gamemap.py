@@ -20,8 +20,8 @@ class TestCalculatePositionBasedOnDirection(TestCase):
         direction = 'n'
         startpos = testobj.position [4][5]
         endpos = testobj.calculate_position(startpos, direction)
-        self.assertEquals(endpos.x , 5)
-        self.assertEquals(endpos.y , 5)
+        self.assertEqual(endpos.x , 5)
+        self.assertEqual(endpos.y , 5)
 
 class TestWalls(TestCase):
     def test_init(self):
@@ -29,5 +29,5 @@ class TestWalls(TestCase):
         direction = "e"
         startpos = testobj.position[4][9]
         endpos = testobj.calculate_position(startpos, direction)
-        self.assertEquals(endpos.y, 4)
-        self.assertEquals(endpos.x ,9)
+        self.assertEqual(endpos.y, 4)
+        self.assertEqual(endpos.x ,9)
